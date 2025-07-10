@@ -5,6 +5,12 @@ body {
   padding: 20px;
   font-size: 1.2em;
 }
+h1 {
+  font-size: 1.6em;
+  text-align: center;
+  margin-top: 20px;
+  white-space: nowrap;
+}
 .button-container button {
   display: block;
   width: 80%;
