@@ -1,8 +1,14 @@
 
 body {
   font-family: sans-serif;
-  padding: 1em;
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2em;
 }
-.hidden {
-  display: none;
+.button-container button {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 15px;
+  font-size: 1.2em;
 }

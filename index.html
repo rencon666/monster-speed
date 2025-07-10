@@ -1,52 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ものすごいスピード</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <h1>ものすごいスピード</h1>
-  <p>サーキット走行とツーリング記録アプリ</p>
-
-  <form id="recordForm">
-    <label>カテゴリ:
-      <select id="category" name="category">
-        <option value="">選択してください</option>
-        <option value="circuit">サーキット</option>
-        <option value="touring">ツーリング</option>
-        <option value="maintenance">整備</option>
-      </select>
-    </label><br>
-
-    <div id="commonFields">
-      <label>日付: <input type="date" id="date" name="date" required /></label><br>
-    </div>
-
-    <div id="circuitFields" class="hidden">
-      <label>セッティング: <input type="text" id="setting" name="setting" /></label><br>
-    </div>
-
-    <div id="touringFields" class="hidden">
-      <label>訪れた場所: <input type="text" id="location" name="location" /></label><br>
-      <label>ガソリン給油 (L): <input type="number" id="fuel" name="fuel" /></label><br>
-      <label>宿泊費 (円): <input type="number" id="accommodation" name="accommodation" /></label><br>
-    </div>
-
-    <div id="maintenanceFields" class="hidden">
-      <label>整備内容: <input type="text" id="maintenance" name="maintenance" /></label><br>
-    </div>
-
-    <label>メモ: <textarea id="memo" name="memo"></textarea></label><br>
-    <label>写真: <input type="file" id="photo" accept="image/*" /></label><br>
-    <button type="submit">記録する</button>
-  </form>
-
-  <h2>記録一覧</h2>
-  <ul id="recordList"></ul>
-
-  <script src="script.js"></script>
+  <div class="button-container">
+    <button onclick="location.href='touring.html'">🏍 ツーリング</button>
+    <button onclick="location.href='circuit.html'">🏁 サーキット</button>
+    <button onclick="location.href='maintenance.html'">🛠 整備</button>
+  </div>
 </body>
 </html>
